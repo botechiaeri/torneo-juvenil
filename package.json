@@ -1,0 +1,24 @@
+{
+    "name": "mi-equipo-juega",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/app.js",
+    "scripts": {
+        "test": "npm run test",
+        "start": "node ./src/app.js",
+        "devil": "nodemon ./src/app.js"
+    },
+    "keywords": [],
+    "author": "botechiaeri <botechiaerikaluisa@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "^5.2.0-beta1",
+        "ejs": "^3.1.8",
+        "express": "^4.18.1",
+        "package.json": "^2.0.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.7",
+        "nodemon": "^2.0.16"
+    }
+}
