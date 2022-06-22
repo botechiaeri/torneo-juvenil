@@ -1,53 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
-    <%-include ('./../partials/head.ejs')%>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/customGrid.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
-<body>
 
-    <div class="container container-products">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="h2-rooms">
-                    INSCRIPCION DE JUGADORES
-                </h2>
-                <h3> EQUIPO
-                    <%=j.equipo%>
-                </h3>
-            </div>
-        </div>
-        <div class="col-12">
-            <form action="/jugadores/agregar" method="POST" enctype="multipart/form-data">
-                <div class="form-group row" id="rooms_overview">
-                    <div class="row">
-                        <div class="col-5" for="idTFK">
-                            <label for="rooms_name" class="form-label">ID(idT):</label>
-                            <input type="text" id="rooms_name" name="rooms_name" input="Ejemplo: 01" class="form-input col-4">
 
-                            <div class="col-8">
-                                <label for="rooms_name" class="form-label">Nombre Telo</label>
-                                <input type="text" id="rooms_name" name="rooms_name" placeholder="habitacion SPA" class="form-input">
-                            </div>
-                        </div>
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-orange-600 px-5 py-10">
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">Registrar Jugadores</h1>
+            <p class="mt-10 text-white">Administra tu Equipo con el TORNEO JUVENIL</p>
+            <nav class="mt-8">
+                <a href="/" class="px-3 py-1 text-white block hover:bg-orange-700 hover:text-white bg-orange-400">Clientes</a>
+                <a href="nuevo-cliente.html" class="px-3 py-1 text-white block hover:bg-orange-700	 mt-2 hover:text-white-400">Nuevo Cliente</a>
+            </nav>
+        </aside>
+        <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
+            <div class="container container-products">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="h2-rooms">
+                            FORMULARIO PRE-PARTIDO
+                        </h2>
+                        <h3> EQUIPO </h3>
                     </div>
-                    <div class="form-group row" id="shift_1">
-                        <legend>Turno #01</LEGEND>
-                        <div class="col-12">
-                            <label for="days_shift_1" class="form-label col-2">Dias :</label>
-                            <input type="text" id="days_shift_1" name="days_shift_1" placeholder="Lunes a Viernes" class="form-input col-8">
-                        </div>
-                        <div class="col-6">
-                            <label for="startEnd_shift_1" class="form-label">Horarios Validos:</label><br/>
-                            <input type="text" id="startEnd_shift_1" name="startEnd_shift_1" placeholder="Entre 6 am hasta 18 pm">
-                        </div>
-                        <div class="col-4">
-                            <label for="period_shift_1" class="form-label"> Duracion 
+                </div>
+                <div class="col-12">
+                    <form action="/jugadores/agregar" method="POST" enctype="multipart/form-data">
+                        <div class="form-group row" id="rooms_overview">
+                            <div class="row">
+                                <div class="col-5" for="idTFK">
+                                    <label for="rooms_name" class="form-label">ID(idT):</label>
+                                    <input type="text" id="rooms_name" name="rooms_name" input="Ejemplo: 01" class="form-input col-4">
+
+                                    <div class="col-8">
+                                        <label for="rooms_name" class="form-label">Nombre Telo</label>
+                                        <input type="text" id="rooms_name" name="rooms_name" placeholder="habitacion SPA" class="form-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="shift_1">
+                                <legend>Turno #01</LEGEND>
+                                <div class="col-12">
+                                    <label for="days_shift_1" class="form-label col-2">Dias :</label>
+                                    <input type="text" id="days_shift_1" name="days_shift_1" placeholder="Lunes a Viernes" class="form-input col-8">
+                                </div>
+                                <div class="col-6">
+                                    <label for="startEnd_shift_1" class="form-label">Horarios Validos:</label><br/>
+                                    <input type="text" id="startEnd_shift_1" name="startEnd_shift_1" placeholder="Entre 6 am hasta 18 pm">
+                                </div>
+                                <div class="col-4">
+                                    <label for="period_shift_1" class="form-label"> Duracion 
 						</label><br/>
-                            <input type="text" id="period_shift_1" name=period_shift_1 " placeholder="2 horas " class="form-input ">
+                                    <input type="text" id="period_shift_1" name=period_shift_1 " placeholder="2 horas " class="form-input ">
 				</div>
 				<fieldset class="col-12 ">
 					<legend>Precios </legend>

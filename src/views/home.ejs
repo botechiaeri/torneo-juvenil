@@ -10,56 +10,56 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
-<body>
-
-    <body class="min-h-100 bg-gray-200">
-        <div class="md:flex min-h-screen md:align-top">
-            <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-orange-600 px-5 py-10">
-                <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">Registrar Jugadores</h1>
-                <p class="mt-10 text-white">Administra tu Equipo con el TORNEO JUVENIL</p>
-                <nav class="mt-8">
-                    <a href="/" class="px-3 py-1 text-white block hover:bg-orange-700 hover:text-white bg-orange-400">Clientes</a>
-                    <a href="nuevo-cliente.html" class="px-3 py-1 text-white block hover:bg-orange-700	 mt-2 hover:text-white-400">Nuevo Cliente</a>
-                </nav>
-            </aside>
-            <!--sidebar-->
-            <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
 
 
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-orange-600 px-5 py-10">
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">Registrar Jugadores</h1>
+            <p class="mt-10 text-white">Administra tu Equipo con el TORNEO JUVENIL</p>
+            <nav class="mt-8">
+                <a href="/" class="px-3 py-1 text-white block hover:bg-orange-700 hover:text-white bg-orange-400">Clientes</a>
+                <a href="nuevo-cliente.html" class="px-3 py-1 text-white block hover:bg-orange-700	 mt-2 hover:text-white-400">Nuevo Cliente</a>
+            </nav>
+        </aside>
+        <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
 
 
-                <h2 class="text-3xl font-light text-center">JUGADORES</h2>
 
-                <p class="text-center text-gray-600 mt-10">No hay JUGADORES REGISTRADOS</p>
 
-                <div class="flex flex-col mt-10">
-                    <div class="py-2 overflow-x-auto">
-                        <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
-                            <table class="min-w-full">
-                                <thead class="bg-orange-500	">
-                                    <tr>
-                                        <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
-                                            Nombre Cliente
-                                        </th>
-                                        <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
-                                            Teléfono
-                                        </th>
-                                        <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
-                                            Empresa
-                                        </th>
-                                        <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
-                                            Acciones
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody id="listado-clientes" class="bg-white"></tbody>
-                            </table>
-                        </div>
+            <h2 class="text-3xl font-light text-center">JUGADORES</h2>
+
+            <p class="text-center text-gray-600 mt-10">No hay JUGADORES REGISTRADOS</p>
+
+            <div class="flex flex-col mt-10">
+                <div class="py-2 overflow-x-auto">
+                    <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                        <table class="min-w-full">
+                            <thead class="bg-orange-500	">
+                                <tr>
+                                    <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
+                                        Nombre Cliente
+                                    </th>
+                                    <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
+                                        Teléfono
+                                    </th>
+                                    <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
+                                        Empresa
+                                    </th>
+                                    <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
+                                        Acciones
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="listado-clientes" class="bg-white"></tbody>
+                        </table>
                     </div>
                 </div>
-            </main>
-        </div>
-        <script src="/js/editPlayers.js"></script>
-    </body>
+            </div>
+        </main>
+    </div>
+    <script src="/js/editPlayers.js"></script>
+</body>
 
 </html>

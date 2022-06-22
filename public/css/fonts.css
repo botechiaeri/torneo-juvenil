@@ -16,10 +16,12 @@ body {
 h1,
 h2,
 h3 {
-    @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap');
-    font-family: 'Anek Latin', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap') font-family: 'Anek Latin', sans-serif;
     font-weight: 500;
 }
+
+
+/* --------h1 header sizes------------- */
 
 h1 {
     font-size: 3.8rem;
